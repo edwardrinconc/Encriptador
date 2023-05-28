@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="imagenes/Logo.png" alt="Logo Alura" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui" required></textarea>
+            <div>
+                <h6 class="condiciones">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="resultado" id="resultado" cols="20" rows="13" required></textarea>
+            <div class="botones">
+                <button class="btn-copiar" onclick="btnCopiarTexto()">Copiar</button>
+            </div>  
+        </section>
+    </main>
+    <footer>
+        <div class="ad">
+            <h6 class="footer">Desarrollado por Edward Rincón</h6>
+        </div>
+        
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
